@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import axios from 'axios';
 import './ContiguousAllocator.css';
 
-const API_BASE = '/api/memory/contiguous';
+const API_BASE = '${import.meta.env.VITE_API_URL || '/api'}/memory/contiguous';
 
 const ContiguousAllocator = () => {
     const [memoryState, setMemoryState] = useState(null);
