@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import axios from 'axios';
 import './PagingSimulator.css';
 
-const API_BASE = '/api/memory';
+const API_BASE = `${import.meta.env.VITE_API_URL || '/api'}/memory`;
 
 const PagingSimulator = () => {
     const navigate = useNavigate();
